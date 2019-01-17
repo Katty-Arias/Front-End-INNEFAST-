@@ -1,0 +1,398 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylevista.css">
+    <link rel="stylesheet" href="tablausuario.css">
+    <link rel="stylesheet" href="cssformularioagrus.css">
+    <link rel="stylesheet" href="cssagrus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="tablaproyecto.css" />
+    <title>INNEFAST</title>
+</head>
+<body>
+    <!-- crear barra lateral desplegable-->
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3 align=center>INNEFAST</h3><img class="img-responsive" src="logo con editado.png" alt="Chania" width="200" height="180">
+            </div>
+            <ul class="list-unstyled components">
+                <p>ADMINISTRADOR</p><!-- se debe agregar el nombre del usuario ingresado-->
+                <li>
+                    <a href="#">INICIO</a>
+                </li>
+                <!-- dropdow para desplegar mas funciones hacia abajo en barra-->
+                <li class="active">
+                    <a href="#staffSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">STAFF</a>
+                    <ul class="collapse list-unstyled" id="staffSubmenu">
+                        <!-- siempre debe coincidir con su href-->
+                        <li>
+                            <!-- sub menú agregar miembro-->
+                            <a href="#usuarioagregar" id="agregarus">Agregar Miembro</a><!-- subclases -->
+                        </li>
+                        <li>
+                            <!-- sub menú staff-->
+                            <a href="#staffgeneral" id="staff">Staff</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#proyectoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PROYECTOS</a>
+                    <ul class="collapse list-unstyled" id="proyectoSubmenu">
+                        <li>
+                            <!-- sub menú agregar proyecto-->
+                            <a href="#proyectoagregar" id="agregar">Agregar Proyecto</a>
+                        </li>
+
+                        <li>
+                            <!-- sub menú estado de proyecto-->
+                            <a href="#estadodeproyecto" id="estado">Estado de Proyectos</a>
+                        </li>
+                        <li>
+                            <!-- sub menú historial de proyecto-->
+                            <a href="#proyectohistorial" id="historial">Historial de Proyectos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#administradorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ADMINISTRADOR</a>
+                    <ul class="collapse list-unstyled" id="administradorSubmenu">
+                        <li>
+                            <!-- sub menú agregar administrador-->
+                            <a href="#agregaradministrador" id="agregaradm">Agregar Administrador</a>
+                        </li>
+                        <li>
+                            <!-- sub menú administradores-->
+                            <a href="#proyectoagregar" id="agregarpro">Administradores</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </nav>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fa fa-align-justify"></i> <span></span>
+                </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Cerrar Sesion</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!----inicio tabla proyecto-->
+            <TABLE style="margin:100xp;" BORDER=2 bordercolor="blue" id="tabla">
+                <TR></TR>
+                <TH>ID</TH>
+                <TH id="rut" class="rut">Nombre proyecto</TH>
+                <TH id="correo" class="correo">Miembros proyecto</TH>
+                <TH>Fecha inicio</TH>
+                <TH>Fecha final</TH>
+                <TH>Estado</TH>
+                <TH>Acción</TH>
+                </TR>
+                <TR>
+                    <TD></TD>
+                    <TD id="rut" class="rut"></TD>
+                    <TD id="correo" class="correo"></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                </TR>
+                <TR>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                </TR>
+                <TR>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                    <TD></TD>
+                </TR>
+            </TABLE>
+        </div>
+    </div>
+    <!---- fin tabla proyecto-->
+    <!---- inicio tabla usuario-->
+    <TABLE BORDER=2 bordercolor="blue" id="tablausuario">
+        <TR></TR>
+        <TH>Nombre</TH>
+        <TH id="rut" class="rut">Rut</TH>
+        <TH id="correo" class="correo">Correo</TH>
+        <TH>Cargo</TH>
+        <TH>Habilidades</TH>
+        <TH>Proyecto</TH>
+        <TH>Acción</TH></TR>
+        <TR>
+            <TD></TD>
+            <TD id="rut" class="rut"></TD>
+            <TD id="correo" class="correo"></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+
+    </TABLE>
+    <!--fin tabla usuario -->
+    <!---- inicio tabla usuario-->
+    <TABLE style="margin:100xp;" BORDER=2 bordercolor="blue" id="tablaestado">
+        <TR></TR>
+        <TH>Nombre</TH>
+        <TH id="rol" class="rol">Rol</TH>
+        <TH id="correo" class="correo">Correo</TH>
+        <TH>Contraseña</TH>
+        <TH>Acción</TH></TR>
+        <TR>
+            <TD></TD>
+            <TD id="rut" class="rut"></TD>
+            <TD id="correo" class="correo"></TD>
+            <TD></TD>
+            <TD></TD>
+           
+        </TR>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+        <TR>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+            <TD></TD>
+        </TR>
+    </TABLE>
+    <!--fin tabla usuario -->
+    <!----Formulario usuario-->
+    <form action="" name="formulario" method="get" id="formus">
+        </head>
+        <body>
+            <link rel="stylesheet" href="cssformularioagrus.css">
+            <form action="" name="formulario" method="get">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required />
+                </div>
+                <div>
+                    <label for="name">Rut:</label>
+                    <input type="text" id="rut" required />
+                </div>
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" required />
+                </div>
+                <div>
+                    <label for="msg">Cargo:</label>
+                    <input type="msg" id="cargo" required />
+                </div>
+                <div>
+                    <label for="msg">Habilidades:</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div>
+                    <label for="mail">Proyecto:</label>
+                    <select name="OS" required>
+                        <option value="1">Staffing</option>
+                        <option value="2">Reclamos</option>
+                        <option value="3">Banco</option>
+                        <option value="10">Fedora</option>
+                        <option value="11">Debian</option>
+                        <option value="12">Suse</option>
+                    </select>
+                </div>
+                <div class="button">
+                    <button type="submit">Cancelar</button>
+
+                    <form action="/administrador-inicio" method="post">
+                        <class ="button">
+                            <button type="submit">Aceptar</button>
+                </div>
+                <!---- funcion para validar-->
+                <script>
+                    (function () {
+                        var formulario = document.getElementsByName('formulario')[0],
+                            elementos = formulario.elements,
+                            boton = document.getElementById('btn');
+
+                        var validarNombre = function (e) {
+                            if (formulario.nombre.value == 0) {
+                                alert("Completa el campo nombre");
+                                e.preventDefault();
+                            }
+                        };
+                        var validar = function (e) {
+                            validarNombre(e);
+                        };
+
+                        formulario.addEventListener("submit", validar);
+                    }())
+                </script>
+        </body>
+    </form>
+    <!--fin formulario usuario -->
+    <!----Formulario administrador-->
+    <form action="/crado-con-exito" method="post" id="formad">
+        <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" />
+        </div>
+        <div>
+            <label for="msg">Rol:</label>
+            <input type="msg" id="msg" />
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" />
+        </div>
+        <div>
+            <label for="mail">Contraseña:</label>
+            <input type="email" id="mail" />
+        </div>
+
+        <div class="button">
+            <button type="submit">Cancelar</button>
+
+            <form action="/administrador-inicio" method="post">
+                <class ="button">
+                    <button type="submit">Aceptar</button>
+        </div>
+    </form>
+    </form>
+    <!--fin formulario administrador -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--tabla historial -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tabla').hide();
+            $('#historial').click(function (e) {
+                e.preventDefault();
+                $('#tabla').show();
+            })
+        })
+    </script>
+    <!--tabla historial -->
+    <!--tabla estado -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tablaestado').hide();
+            $('#estado').click(function (e) {
+                e.preventDefault();
+                $('#tablaestado').show();
+            })
+        })
+    </script>
+    <!--tabla estado -->
+    <!--tabla usuario -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tablausuario').hide();
+            $('#staff').click(function (e) {
+                e.preventDefault();
+                $('#tablausuario').show();
+            })
+
+        })
+    </script>
+    <!--tabla usuario -->
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#formus').hide();
+            $('#agregarus').click(function (e) {
+                e.preventDefault();
+                $('#formus').show();
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        $(document).ready(function () {
+            $('#formad').hide();
+            $('#agregaradm').click(function (e) {
+                e.preventDefault();
+                $('#formad').show();
+            })
+        })
+    </script>
+
+</body>
+</html>
