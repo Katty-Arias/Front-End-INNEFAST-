@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="stylevista.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-
+	<link rel="stylesheet" type="text/css" media="screen" href="tablaproyecto.css" />
     <title>INNEFAST</title>
   </head>
   <body>
@@ -40,8 +40,9 @@
    				<a href="#proyectoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PROYECTOS</a>
    				<ul class="collapse list-unstyled" id="proyectoSubmenu">
    					<li>
-   						<a href="#">AgregarProyecto</a>
-   					</li>
+						   <a href="#proyectoagregar" id="agregar">Agregar Proyecto</a>
+					</li>
+					   
    					<li>
    						<a href="#">Estado de Proyectos</a>
    					</li>
@@ -57,7 +58,7 @@
                             <a href="#">Agregar Administrador</a>
                         </li>
                         <li>
-                            <a href="#">Administradores</a>
+                            <a href="proyectoagregar">Administradores</a>
                         </li>
                     </ul> 
              </li>
@@ -84,36 +85,25 @@
         </div>
         </nav>
   	
-  	
-  	
   	<h2>Collapsible Sidebar Using Bootstrap 4</h2>
-  	
-  	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  	
-  	<div class="line"></div>
-  	
-  	<h2>Collapsible Sidebar Using Bootstrap 4</h2>
-  	
-  	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  	
-  	<div class="line"></div>
-  	<h2>Collapsible Sidebar Using Bootstrap 4</h2>
-  	
-  	 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  	
-  	<div class="line"></div>
-  	
-   	</div>
-   	
-   	
-   	
-   	
-   	
+  	<div class="proyectoagregar">
+	<div style="text-align:center;"> 
+  	<TABLE  style="margin:100xp;" BORDER=2 bordercolor="blue" id="tabla" >
+			<TR>
+			  </TR><TH>ID</TH><TH id="rut" class ="rut">Nombre proyecto</TH><TH id="correo" class ="correo">Miembros proyecto</TH> <TH>Fecha inicio</TH><TH>Fecha final</TH><TH>Estado</TH><TH>Acción</TH>
+			</TR>
+			<TR>
+			  <TD></TD> <TD id="rut" class ="rut"></TD> <TD id="correo" class ="correo"></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
+			</TR>
+			<TR>
+			  <TD></TD> <TD></TD> <TD></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
+			</TR>
+			<TR>
+				<TD></TD> <TD></TD> <TD></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
+			  </TR>
+		  </TABLE>
    </div>
-    
+</div>	  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -127,11 +117,15 @@
 				$('#sidebar').toggleClass('active');
 			});
 		});  
-	</script>
-    
-    
-    
-    
-    
+
+		$(document).ready(function(){
+			$('#tabla').hide();
+
+			$('#agregar').click(function(e){
+				e.preventDefault();
+				$('#tabla').show();
+			})
+		})
+	</script> 
   </body>
 </html>
