@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        .formulario__submit, .formulario__submits {
+            float: left;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+    <meta charset="UTF-8">
+    <title>Formulario animado</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="" class="formulario">
+        <h1 class="formulario__titulo">Agregar usuario</h1>
+
+        <input type="text" class="formulario__input" required>
+        <label for="" class="formulario__label">Nombre</label>
+
+        <select name="OS" class="OS">
+            <option selected value="0">Elige un proyecto</option>
+            <option value="1">Windows Vista</option>
+            <option value="2">Windows 7</option>
+            <option value="3">Windows XP</option>
+            <option value="10">Fedora</option>
+            <option value="11">Debian</option>
+            <option value="12">Suse</option>
+            </optgroup>
+        </select>
+
+        <input type="email" class="formulario__input" required>
+        <label for="" class="formulario__label">Correo</label>
+
+        <input type="password" class="formulario__input" required>
+        <label for="" class="formulario__label">Contraseña</label>
+
+        <label type="button" class="formulario__submits">Cancelar</label>
+        <label type="button" class="formulario__submit">Enviar</label>
+
+
+    </form>
+    <script src="form.js"></script>
+</body>
+</html>
