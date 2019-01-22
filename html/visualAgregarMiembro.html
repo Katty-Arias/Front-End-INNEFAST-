@@ -90,49 +90,41 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
          <li class="nav-item">
-          <a class="nav-link disabled" href="#">_______________________________________________________________________________________________________________-Cerrar Sesion</a>
+          <a class="nav-link disabled" href="HTMLPage1.html">_______________________________________________________________________________________________________________-Cerrar Sesion</a>
          </li>
         </ul>
         </div>
         </nav>
   	
   	
-		<form action="" class="formulario">
-			<h1 class="formulario__titulo">Agregar miembro</h1>
+	<form action="" class="formulario">
+		<h1 class="formulario__titulo">Agregar miembro</h1>
+	      <input type="text" class="formulario__input" required>
+		  <label for="" class="formulario__label">Nombre:</label>
+	      <input type="text" class="formulario__input" required>
+		  <label for="" class="formulario__label">Rut:</label>
+	      <input type="email" class="formulario__input" required>
+		  <label for="" class="formulario__label">Correo:</label>
+	      <input type="text" class="formulario__input" required>
+		  <label for="" class="formulario__label">Cargo:</label>
+	      <input type="msg" class="formulario__input" required>
+		  <label for="" class="formulario__label">Habilidades:</label>
 	
-			<input type="text" class="formulario__input" required>
-			<label for="" class="formulario__label">Nombre:</label>
+	    <select name="OS" class="OS">
+		  <option selected value="0">Elige un proyecto:</option>
+		  <option value="1">Windows Vista</option>
+		  <option value="2">Windows 7</option>
+	      <option value="3">Windows XP</option>
+		  <option value="10">Fedora</option>
+		  <option value="11">Debian</option>
+		  <option value="12">Suse</option>
+		  </optgroup>
+	    </select>
+	    <label type="button" class="formulario__submits">Cancelar</label>
+	    <label type="button" class="formulario__submit">Enviar</label>
 	
-			<input type="text" class="formulario__input" required>
-			<label for="" class="formulario__label">Rut:</label>
-	
-			<input type="email" class="formulario__input" required>
-			<label for="" class="formulario__label">Correo:</label>
-	
-			<input type="text" class="formulario__input" required>
-			<label for="" class="formulario__label">Cargo:</label>
-	
-			<input type="msg" class="formulario__input" required>
-			<label for="" class="formulario__label">Habilidades:</label>
-	
-			<select name="OS" class="OS">
-				<option selected value="0">Elige un proyecto:</option>
-				<option value="1">Windows Vista</option>
-				<option value="2">Windows 7</option>
-				<option value="3">Windows XP</option>
-				<option value="10">Fedora</option>
-				<option value="11">Debian</option>
-				<option value="12">Suse</option>
-				</optgroup>
-			</select>
-	
-	
-			<label type="button" class="formulario__submits">Cancelar</label>
-			<label type="button" class="formulario__submit">Enviar</label>
-	
-	
-		</form>
-		<script src="form.js"></script>
+    </form>
+		<script src="../css/form.js"></script>
     
 
     <!-- Optional JavaScript -->
