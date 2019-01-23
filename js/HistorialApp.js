@@ -2,7 +2,7 @@
 
 app.controller('ctrlHistorial', function ($scope, $http) {
     $scope.guardar = function () {
-        var administrador = {
+        var historial = {
             "nombre": $scope.nombre,
             "rut": $scope.rut,
             "correo": $scope.correo,
