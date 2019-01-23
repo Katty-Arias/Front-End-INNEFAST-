@@ -110,15 +110,15 @@
          <form action="" class="formulario">
                 <h1 class="formulario__titulo">Agregar miembro</h1>
                 <input type="text" class="formulario__input" required>
-                <label for="" class="formulario__label">Nombre:</label>
+                <label for="" class="formulario__label" ng-model="nombre">Nombre:</label ng-model="nombre">
                 <input type="text" class="formulario__input" required>
-                <label for="" class="formulario__label">Rut:</label>
+                <label for="" class="formulario__label" ng-model="rut">Rut:</label >
                 <input type="email" class="formulario__input" required>
                 <label for="" class="formulario__label">Correo:</label>
                 <input type="text" class="formulario__input" required>
-                <label for="" class="formulario__label">Cargo:</label>
+                <label for="" class="formulario__label" ng-model="cargo">Cargo:</label >
                 <input type="msg" class="formulario__input" required>
-                <label for="" class="formulario__label">Habilidades:</label>
+                <label for="" class="formulario__label" ng-model="habilidad">Habilidades:</label >
                 </div>
                 </div>
 
@@ -126,16 +126,13 @@
                 <div class="row">
                 <select name="OS" class="OS">
                 <option selected value="0">Elige un proyecto:</option>
-                <option value="1">Windows Vista</option>
-                <option value="2">Windows 7</option>
-                <option value="3">Windows XP</option>
-                <option value="10">Fedora</option>
-                <option value="11">Debian</option>
-                <option value="12">Suse</option>
+                <option value="10">Proyecto 1</option>
+                <option value="11">Proyecto 2</option>
+                <option value="12">Proyecto 3</option>
                 </optgroup>
                 </select>
                 <label type="button" class="formulario__submits">Cancelar</label>
-                <label type="button" class="formulario__submit" ng-click="guardar()">Enviar</label>
+                <label type="button" class="formulario__submit" ng-click="guardar()" ng-model="proyecto">Enviar</label>
                 </form>
                 </div>
                 </div>
