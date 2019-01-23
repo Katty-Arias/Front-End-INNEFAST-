@@ -146,7 +146,8 @@
                               </tr>
                           </thead>
                           <tbody>
-                              <tr>
+                                  
+                                <tr ng-repeat="cancion in canciones | filter:q ">
                                   <th scope="row">{{historial.nombre}}</th>
                                   <td>{{historial.rut}}</td>
                                   <td>{{historial.correo}}</td>

@@ -139,13 +139,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                
+                                <tr ng-repeat="cancion in canciones | filter:q ">
                                     <th scope="row">{{proyectos.nombre}}</th>
                                     <td>{{proyectos.rut}}</td>
                                     <td>{{proyectos.correo}}</td>
                                     <td>{{proyectos.habilidades}}
                                     <td>{{proyectos.proyecto}}</td>
-                                    <td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
+                                    <td><button class="btn btn-danger btn-xs" ng-click="eliminar(proyecto.proyecto)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(proyecto.proyecto)">Editar</button></td>
                                     </td>
                                 </tr>
                             </tbody>

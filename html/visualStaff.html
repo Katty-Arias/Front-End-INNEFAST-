@@ -135,22 +135,39 @@
                         <th scope="col">CARGO</th>
                         <th scope="col">HABILIDADES</th>
 						<th scope="col">PROYECTO</th>
+<<<<<<< HEAD
 						<th scope="col">ACCIÓN</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">{{staff.nombre}}</th>
+=======
+						<th >ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr ng-repeat="cancion in canciones | filter:q ">
+                        <td scope="row">{{staff.nombre}}</td>
+>>>>>>> 4db5099ce3bb835fbe067c64b4ea383e75c8b518
                         <td>{{staff.rut}}</td>
                         <td>{{staff.correo}}</td>
                         <td>{{staff.cargo}}</td>
                         <td>{{staff.habilidaes}}</td>
                         <td>{{staff.proyecto}}</td>
+<<<<<<< HEAD
                         <td><button class="btn btn-danger btn-xs" ng-click="eliminar(staff.staff)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(staff.staff)">Editar</button></td>
 					</td>
 				</tr>
 			</tbody>
 	</table>
+=======
+                        </tr>n<td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
+                </tbody>
+           </table>
+	   </div>
+>>>>>>> 4db5099ce3bb835fbe067c64b4ea383e75c8b518
 </div>
 </div>
 

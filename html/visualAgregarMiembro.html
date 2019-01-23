@@ -107,14 +107,15 @@
                 <form action="" class="formulario">
                 <h1 class="formulario__titulo">Agregar miembro</h1>
                 <input type="text" class="formulario__input" required>
-                <label for="" class="formulario__label">Nombre:</label>
+                <label for="" class="formulario__label" ng-model="nombre">Nombre:</label ng-model="nombre">
                 <input type="text" class="formulario__input" required>
-                <label for="" class="formulario__label">Rut:</label>
+                <label for="" class="formulario__label" ng-model="rut">Rut:</label >
                 <input type="email" class="formulario__input" required>
                 <label for="" class="formulario__label">Correo:</label>
                 <input type="text" class="formulario__input" required>
-                <label for="" class="formulario__label">Cargo:</label>
+                <label for="" class="formulario__label" ng-model="cargo">Cargo:</label >
                 <input type="msg" class="formulario__input" required>
+<<<<<<< HEAD
                 <label for="" class="formulario__label">Habilidades:</label>
                 <select name="OS" class="OS">
                         <option selected value="0">Elige un proyecto:</option>
@@ -139,6 +140,35 @@
    	</div>
    </div>
     
+=======
+                <label for="" class="formulario__label" ng-model="habilidad">Habilidades:</label >
+                </div>
+                </div>
+
+                <div class="col-md-4" >
+                <div class="row">
+                <select name="OS" class="OS">
+                <option selected value="0">Elige un proyecto:</option>
+                <option value="10">Proyecto 1</option>
+                <option value="11">Proyecto 2</option>
+                <option value="12">Proyecto 3</option>
+                </optgroup>
+                </select>
+                <label type="button" class="formulario__submits">Cancelar</label>
+                <label type="button" class="formulario__submit" ng-click="guardar()" ng-model="proyecto">Enviar</label>
+                </form>
+                </div>
+                </div>
+                <div class="col-md-4" >
+                <h3>Opciones</h3>
+                <input type="text" placeholder="Buscar Miembro" class="form-control">
+                <hr>
+                <a href="visualStaff.html" class="btn btn-default btn-primary btn-block">Volver</a>
+                </div>
+                </div>
+            </div>
+		
+>>>>>>> 4db5099ce3bb835fbe067c64b4ea383e75c8b518
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
