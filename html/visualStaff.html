@@ -125,7 +125,7 @@
         </nav>
   	
   	<div class="container-fluid" ng-controller="ctrlStaff"> 	
-        <table class="table table-responsive">
+        <table class="table table-striped">
             <div class="col-md-8">
                 <thead>
                     <tr>
@@ -134,27 +134,26 @@
                         <th scope="col">CORREO</th>
                         <th scope="col">CARGO</th>
                         <th scope="col">HABILIDADES</th>
-                        <th scope="col">PROYECTO</th>
+						<th scope="col">PROYECTO</th>
+						<th scope="col">ACCIÓN</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td scope="row">{{staff.nombre}}</td>
+                        <th scope="row">{{staff.nombre}}</th>
                         <td>{{staff.rut}}</td>
                         <td>{{staff.correo}}</td>
                         <td>{{staff.cargo}}</td>
                         <td>{{staff.habilidaes}}</td>
                         <td>{{staff.proyecto}}</td>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.nombre)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.rut)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.correo)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.cargo)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.habilidaes)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.proyecto)">Eliminar</button>
-</tbody>
-        </table>
-	   </div>
+                        <td><button class="btn btn-danger btn-xs" ng-click="eliminar(staff.staff)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(staff.staff)">Editar</button></td>
+					</td>
+				</tr>
+			</tbody>
+	</table>
 </div>
+</div>
+
     
      <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->

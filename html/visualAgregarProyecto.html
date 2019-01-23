@@ -130,9 +130,7 @@
         </div>
         </nav>
         
-  	
-  	
-        <div class="container-fluid" ng-controller="ctrlNuevoMiembro">
+        <div class="container-fluid" ng-controller="ctrlNuevoProyecto">
             <div class="row">
             <div class="col-offset-2 col-md-4" >
             <form action="" class="formulario">
@@ -145,49 +143,42 @@
             <label for="" class="formulario__label">Fecha inicio:</label>
             <input type="msg" class="formulario__input" required>
             <label for="" class="formulario__label">Fecha final:</label>
-        
-            </div>
-            </div>
-   	
-                <div class="col-md-4" >
-                <div class="row">
-                <select name="OS" class="OS">
+            <select name="OS" class="OS">
                 <option selected value="0">Estado:</option>
                 <option value="1">Activo</option>
                 <option value="2">Inactivo</option>
-
-                </optgroup>
-                </select>
-                <label type="button" class="formulario__submits">Cancelar</label>
-                <label type="button" class="formulario__submit" ng-click="guardar()">Enviar</label>
-                </form>
-                </div>
-                </div>
-               
-   	
-   	
-   	
-   </div>
+              </optgroup>
+            </select>
+          <label type="button" class="formulario__subm">Cancelar</label>
+          <label type="button" class="formulario__submi" ng-click="guardar()">Enviar</label>
     
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    <script>
-	    $(document).ready(function(){
-			$('#sidebarCollapse').on('click',function(){
-				$('#sidebar').toggleClass('active');
-			});
-		});  
-  </script>
-   <script src="../js/form.js"></script>
-    
-    
-    
-    
-    
-  </body>
-</html>
+        </form>
+      </div>
+      </div>
+      </div>
+          <script src="form.js"></script>
+      <div class="line"></div>
+      
+       </div>
+     </div>
+      
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function(){
+        $('#sidebarCollapse').on('click',function(){
+          $('#sidebar').toggleClass('active');
+        });
+      });  
+    </script>
+       <script src="../js/form.js"></script>
+      
+      
+      
+      
+    </body>
+  </html>
