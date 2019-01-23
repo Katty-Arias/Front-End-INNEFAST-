@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en" ng-app="ProtectosApp">
+<html lang="en" ng-app="ProyectosApp">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -135,20 +135,18 @@
                                     <th scope="col">CORREO</th>
                                     <th scope="col">HABILIDADES</th>
                                     <th scope="col">PROYECTO</th>
+                                    <th scope="col">ACCIÓN</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                
+                                <tr ng-repeat="cancion in canciones | filter:q ">
                                     <th scope="row">{{proyectos.nombre}}</th>
                                     <td>{{proyectos.rut}}</td>
                                     <td>{{proyectos.correo}}</td>
                                     <td>{{proyectos.habilidades}}
                                     <td>{{proyectos.proyecto}}</td>
-                                    <button class="btn btn-danger btn-xs" ng-click="eliminar(proyectos.nombre)">Eliminar</button>
-                                    <button class="btn btn-danger btn-xs" ng-click="eliminar(proyectos.rut)">Eliminar</button>
-                                    <button class="btn btn-danger btn-xs" ng-click="eliminar(proyectos.correo)">Eliminar</button>
-                                    <button class="btn btn-danger btn-xs" ng-click="eliminar(proyectos.habilidades)">Eliminar</button>
-                                    <button class="btn btn-danger btn-xs" ng-click="eliminar(proyectos.proyecto)">Eliminar</button>
+                                    <td><button class="btn btn-danger btn-xs" ng-click="eliminar(proyecto.proyecto)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(proyecto.proyecto)">Editar</button></td>
                                     </td>
                                 </tr>
                             </tbody>
