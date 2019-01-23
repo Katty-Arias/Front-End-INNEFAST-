@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="stylevista.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="../css/stylevista.css">
-    
+    <link rel="stylesheet" href="../css/estilos.css">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tablausuario</title>
@@ -132,27 +132,38 @@
         
   	
   	
-  	 
-         <form action="/agregarproyecto" method="post">
-            <TABLE BORDER=2 bordercolor="blue">
-                   <caption class="a">Agregar proyecto</caption>
-                <TR>
-                  </TR><TH>ID</TH><TH id="rut" class ="rut">Nombre proyecto</TH><TH id="correo" class ="correo">Miembros proyecto</TH> <TH>Fecha inicio</TH><TH>Fecha final</TH><TH>Estado</TH><TH>Acción</TH>
-                </TR>
-                <TR>
-                  <TD></TD> <TD id="rut" class ="rut"></TD> <TD id="correo" class ="correo"></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
-                </TR>
-                <TR>
-                  <TD></TD> <TD></TD> <TD></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
-                </TR>
-                <TR>
-                    <TD></TD> <TD></TD> <TD></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
-                  </TR>
-              </TABLE>
-            </form>
-                
+        <div class="container-fluid" ng-controller="ctrlNuevoMiembro">
+            <div class="row">
+            <div class="col-offset-2 col-md-4" >
+            <form action="" class="formulario">
+            <h1 class="formulario__titulo">Agregar proyecto</h1>
+            <input type="text" class="formulario__input" required>
+            <label for="" class="formulario__label">ID:</label>
+            <input type="email" class="formulario__input" required>
+            <label for="" class="formulario__label">Nombre proyecto:</label>
+            <input type="text" class="formulario__input" required>
+            <label for="" class="formulario__label">Fecha inicio:</label>
+            <input type="msg" class="formulario__input" required>
+            <label for="" class="formulario__label">Fecha final:</label>
+        
+            </div>
+            </div>
    	
-   	
+                <div class="col-md-4" >
+                <div class="row">
+                <select name="OS" class="OS">
+                <option selected value="0">Estado:</option>
+                <option value="1">Activo</option>
+                <option value="2">Inactivo</option>
+
+                </optgroup>
+                </select>
+                <label type="button" class="formulario__submits">Cancelar</label>
+                <label type="button" class="formulario__submit" ng-click="guardar()">Enviar</label>
+                </form>
+                </div>
+                </div>
+               
    	
    	
    	

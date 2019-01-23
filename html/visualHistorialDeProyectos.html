@@ -132,8 +132,9 @@
 
               <div class="container-fluid" ng-controller="ctrlHistorial">
 
-                  <table class="table table-striped">
-                      <div class="col-md-8">
+                  <table border="2" class="table table-striped">
+                    <div class="col-md-8">
+                        
                           <thead>
                               <tr>
                                   <th scope="col">NOMBRE</th>
@@ -141,6 +142,7 @@
                                   <th scope="col">CORREO</th>
                                   <th scope="col">HABILIDADES</th>
                                   <th scope="col">PROYECTO</th>
+                                  <th scope="col">ACCION</th>
                               </tr>
                           </thead>
                           <tbody>
@@ -150,12 +152,8 @@
                                   <td>{{historial.correo}}</td>
                                   <td>{{historial.habilidades}}
                                   <td>{{historial.proyecto}}</td>
-                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.nombre)">Eliminar</button>
-                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.rut)">Eliminar</button>
-                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.correo)">Eliminar</button>
-                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.habilidades)">Eliminar</button>
-                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.proyecto)">Eliminar</button>
-                                  </td>
+                                  <td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
+                                 </td>
                               </tr>
                           </tbody>
                   </table>
