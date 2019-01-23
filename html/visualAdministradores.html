@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" href="../css/stylevista.css">
 
-
-    <title>INNEFAST</title>
+ <title>INNEFAST</title>
   </head>
   <body>
       <!-- crear barra lateral desplegable-->
@@ -124,7 +123,7 @@
 
               <div class="container-fluid" ng-controller="ctrlAdministradoresList">
 
-                  <table class="table table-striped">
+                  <table class="table table-striped" >
                       <div class="col-md-8">
                           <thead>
                               <tr>
@@ -139,8 +138,7 @@
                                   <th scope="row">{{administrador.id}}</th>
                                   <td>{{administrador.nombre}}</td>
                                   <td>{{administrador.cargo}}</td>
-                                  <td>
-                                      {{administrador.rut}}
+                                  <td>{{administrador.rut}}
                                       <button class="btn btn-danger btn-xs" ng-click="eliminar(administrador.id)">Eliminar</button>
                                   </td>
                               </tr>

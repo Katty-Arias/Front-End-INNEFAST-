@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -15,163 +15,185 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Tabla usuario</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="../css/tablaproyecto.css" />
 	<script src="main.js"></script>
 
 
     <title>INNEFAST</title>
   </head>
   <body>
-   <!-- crear barra lateral desplegable-->
-   <div class="wrapper">
-   	<nav id="sidebar">
-   		<div class="sidebar-header">
-   			<h3 align=center>INNEFAST </h3><img class="img-responsive" src="../images/logo-3.gif" alt="Chania" width="200" height="200"> 
-   		</div>
-   		<ul class="list-unstyled components">
-			<p>ADMINISTRADOR</p><!-- se debe agregar el nombre del usuario ingresado-->
-			    <li>
-					<a href="visualInicio.html">INICIO</a>
-                </li>
-                <!-- dropdow para desplegar mas funciones hacia abajo en barra-->
-   			<li class="active">
-   				<a href="#staffSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">STAFF</a>
-   				<ul class="collapse list-unstyled" id="staffSubmenu"><!-- siempre debe coincidir con su href-->
-   					<li>
-   						<a href="visualAgregarMiembro.html">Agregar Miembro</a><!-- subclases -->
-   					</li>
-   					<li>
-   						<a href="visualStaff.html">Staff</a>
-   					</li>
-   				</ul> 
-            </li>
-   			<li>
-   				<a href="#proyectoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PROYECTOS</a>
-   				<ul class="collapse list-unstyled" id="proyectoSubmenu">
-   					<li>
-   						<a href="visualAgregarProyecto.html">Agregar Proyecto</a>
-   					</li>
-   					<li>
-   						<a href="visualProyectos.html">Proyectos</a>
-   					</li>
-   					<li>
-   						<a href="visualHistorialDeProyectos.html">Historial de Proyectos</a>
-   					</li>
-   				</ul> 
-               </li>
-               <li class="active">
-                    <a href="#administradorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ADMINISTRADOR</a>
-                    <ul class="collapse list-unstyled" id="administradorSubmenu">
-                        <li>
-                            <a href="visualAgregarAdministrador.html">Agregar Administrador</a>
-                        </li>
-                        <li>
-                            <a href="visualAdministradores.html">Administradores</a>
-                        </li>
-                    </ul> 
-			 </li>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-			<li>
-			 <a href="#"></a>
-			</li>
-		
-   			
-   		</ul>
-   		
-   	</nav>
+      <!-- crear barra lateral desplegable-->
+      <div class="wrapper">
+          <nav id="sidebar">
+              <div class="sidebar-header">
+                  <h3 align=center>INNEFAST </h3><img class="img-responsive" src="../images/logo-3.gif" alt="Chania" width="200" height="200">
+              </div>
+              <ul class="list-unstyled components">
+                  <p>ADMINISTRADOR</p><!-- se debe agregar el nombre del usuario ingresado-->
+                  <li>
+                      <a href="visualInicio.html">INICIO</a>
+                  </li>
+                  <!-- dropdow para desplegar mas funciones hacia abajo en barra-->
+                  <li class="active">
+                      <a href="#staffSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">STAFF</a>
+                      <ul class="collapse list-unstyled" id="staffSubmenu">
+                          <!-- siempre debe coincidir con su href-->
+                          <li>
+                              <a href="visualAgregarMiembro.html">Agregar Miembro</a><!-- subclases -->
+                          </li>
+                          <li>
+                              <a href="visualStaff.html">Staff</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#proyectoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PROYECTOS</a>
+                      <ul class="collapse list-unstyled" id="proyectoSubmenu">
+                          <li>
+                              <a href="visualAgregarProyecto.html">Agregar Proyecto</a>
+                          </li>
+                          <li>
+                              <a href="visualProyectos.html">Proyectos</a>
+                          </li>
+                          <li>
+                              <a href="visualHistorialDeProyectos.html">Historial de Proyectos</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="active">
+                      <a href="#administradorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ADMINISTRADOR</a>
+                      <ul class="collapse list-unstyled" id="administradorSubmenu">
+                          <li>
+                              <a href="visualAgregarAdministrador.html">Agregar Administrador</a>
+                          </li>
+                          <li>
+                              <a href="visualAdministradores.html">Administradores</a>
+                          </li>
+                      </ul>
+                  </li>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
+                  <li>
+                      <a href="#"></a>
+                  </li>
 
-   	<div class="content">
-   		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-   		
-   		<button type="button" id="sidebarCollapse" class="btn btn-info">
-   			<i class="fa fa-align-justify"></i> <span></span>
-   		</button>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-						<a class="nav-link disabled" href="HTMLPage1.html">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; ; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
-				</li>
 
-         <li class="nav-item">
-          <a class="nav-link disabled" href="HTMLPage1.html">Cerrar Sesion</a>
-         </li>
-        </ul>
-        </div>
-        </nav>
-  	
-  	
-		<table class="table">
-		<TABLE BORDER=2 bordercolor="blue">
-			<caption class="a">Agregar usuario</caption>
-		   <TR>
-			 </TR><TH>Nombre</TH><TH id="rut" class ="rut">Rut</TH><TH id="correo" class ="correo">Correo</TH> <TH>Cargo</TH><TH>Habilidades</TH><TH>Proyecto</TH><TH>Acción</TH>
-		   </TR>
-		   <TR>
-			 <TD></TD> <TD id="rut" class ="rut"></TD> <TD id="correo" class ="correo"></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
-		   </TR>
-		   <TR>
-			 <TD></TD> <TD></TD> <TD></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
-		   </TR>
-		   <TR>
-			   <TD></TD> <TD></TD> <TD></TD><TD></TD> <TD></TD> <TD></TD><TD></TD>
-			 </TR>
-		 </TABLE>
-		</table>
-	   
-   	
-   	
-   	
-   </div>
-    
+              </ul>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    
-    <script>
-	    $(document).ready(function(){
-			$('#sidebarCollapse').on('click',function(){
-				$('#sidebar').toggleClass('active');
-			});
-		});  
-	</script>
-	 <script src="../js/form.js"></script>
-    
-    
-    
-    
-    
+          </nav>
+
+          <div class="content">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                  <button type="button" id="sidebarCollapse" class="btn btn-info">
+                      <i class="fa fa-align-justify"></i> <span></span>
+                  </button>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                              <a class="nav-link disabled" href="HTMLPage1.html">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; ; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link disabled" href="HTMLPage1.html">Cerrar Sesion</a>
+                          </li>
+                      </ul>
+                  </div>
+              </nav>
+
+
+              <div class="container-fluid" ng-controller="ctrlAdministradoresList">
+
+                  <table class="table table-striped">
+                      <div class="col-md-8">
+                          <thead>
+                              <tr>
+                                  <th scope="col">NOMBRE</th>
+                                  <th scope="col">RUT</th>
+                                  <th scope="col">CORREO</th>
+                                  <th scope="col">HABILIDADES</th>
+                                  <th scope="col">PROYECTO</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th scope="row">{{historial.nombre}}</th>
+                                  <td>{{historial.rut}}</td>
+                                  <td>{{historial.correo}}</td>
+                                  <td>{{historial.habilidades}}
+                                  <td>{{historial.proyecto}}</td>
+                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.nombre)">Eliminar</button>
+                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.rut)">Eliminar</button>
+                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.correo)">Eliminar</button>
+                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.habilidades)">Eliminar</button>
+                                  <button class="btn btn-danger btn-xs" ng-click="eliminar(historial.proyecto)">Eliminar</button>
+                                  </td>
+                              </tr>
+                          </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+      </div>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+      <script src="../js/HistorialApp.js" type="text/javascript"></script>
+
+
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <script>
+          $(document).ready(function () {
+              $('#sidebarCollapse').on('click', function () {
+                  $('#sidebar').toggleClass('active');
+              });
+          });
+      </script>
+      <script src="../js/form.js"></script>
+
+
+
+
+
   </body>
 </html>
