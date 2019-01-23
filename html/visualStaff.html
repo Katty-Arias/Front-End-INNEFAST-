@@ -134,7 +134,8 @@
                         <th scope="col">CORREO</th>
                         <th scope="col">CARGO</th>
                         <th scope="col">HABILIDADES</th>
-                        <th scope="col">PROYECTO</th>
+						<th scope="col">PROYECTO</th>
+						<th >ACCION</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -146,7 +147,7 @@
                         <td>{{staff.cargo}}</td>
                         <td>{{staff.habilidaes}}</td>
                         <td>{{staff.proyecto}}</td>
-                    </tr>
+                        </tr>n<td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
                 </tbody>
            </table>
 	   </div>
