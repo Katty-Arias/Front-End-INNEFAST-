@@ -138,21 +138,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    
+                    <tr ng-repeat="cancion in canciones | filter:q ">
                         <td scope="row">{{staff.nombre}}</td>
                         <td>{{staff.rut}}</td>
                         <td>{{staff.correo}}</td>
                         <td>{{staff.cargo}}</td>
                         <td>{{staff.habilidaes}}</td>
                         <td>{{staff.proyecto}}</td>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.nombre)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.rut)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.correo)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.cargo)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.habilidaes)">Eliminar</button>
-                        <button class="btn btn-danger btn-xs" ng-click="eliminar(staff.proyecto)">Eliminar</button>
-</tbody>
-        </table>
+                    </tr>
+                </tbody>
+           </table>
 	   </div>
 </div>
     

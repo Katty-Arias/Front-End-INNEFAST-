@@ -10,7 +10,7 @@ app.controller('ctrlnuevoAdmin', function ($scope, $http) {
             "rol": $scope.rol,
         };
 
-        $http.put("http://localhost:8082/guardarUsuario",UsuarioService)
+        $http.put("http://localhost:8082/guardarUsuario",Usuario)
         .then(function (resp) {
             console.log(resp.data);
             window.location.href = "visualAdministradores.html";

@@ -12,7 +12,7 @@ app.controller('ctrlNuevoMiembro', function ($scope, $http) {
             "proyecto":$scope.proyecto,
         };
 
-        $http.put("http://localhost:8080/guarPersona",PersonaService)
+        $http.put("http://localhost:8080/empleados",Empleados)
         .then(function (resp) {
             console.log(resp.data);
             window.location.href = "visualStaff.html";
