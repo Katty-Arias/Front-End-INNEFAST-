@@ -1,7 +1,7 @@
 var app = angular.module('NuevoMiembroApp', []);
 
 app.controller('ctrlNuevoMiembro', function ($scope, $http) {
-    $scope.guardar = function () {
+    $scope.guardarmiembro = function () {
         var miembro = {
             "idPersona": 121,
             "nombre": $scope.nombre,
