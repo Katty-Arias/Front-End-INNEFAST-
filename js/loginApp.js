@@ -1,8 +1,8 @@
-var app = angular.module('nuevoAdminApp', []);
+var app = angular.module('loginApp', []);
 
-app.controller('ctrlnuevoAdmin', function ($scope, $http) {
+app.controller('ctrllogin', function ($scope, $http) {
     $scope.guardar = function () {
-        var usuario = {
+        var login = {
             "id": 121,
             "nombreUs": $scope.nombreUs,
             "email": $scope.email,
