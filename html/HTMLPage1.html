@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="loginApp" >
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
@@ -25,8 +25,8 @@
                 <input type="password" placeholder="Contraseña" required>
                 <label for="" class="formulario">Contraseña</label>
 
-                <input type="submit" class="botonlg" value="Iniciar Sesión">
-                <a href="editar.html">iniciar aqui</a>
+                <input type="submit" class="botonlg" value="Iniciar Sesión" href="editar.html" ng-click="guardar()"  >
+                <label type="submit" href="editar.html" class="botonlg" ng-click="guardar()">Enviar</label>
             </form>
         </div>
 
@@ -37,5 +37,7 @@
     <script src="Script1.js"></script>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="../js/loginAngular.js" "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="../js/loginApp.js" type="text/javascript" ></script>
 </body>
 </html>
