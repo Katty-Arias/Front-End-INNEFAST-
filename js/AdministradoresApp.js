@@ -10,7 +10,7 @@ app.controller('ctrlAdministradores', function ($scope, $http) {
           
         };
 
-        $http.put("http://localhost:8080/administradores", administrador)
+        $http.put("http://localhost:8082/administradores", administrador)
             .then(function (resp) {
                 console.log(resp.data);
                 window.location.href = "visualAdministradores.html";
