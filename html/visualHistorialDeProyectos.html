@@ -128,40 +128,39 @@
                       </ul>
                   </div>
               </nav>
+              <div class="container-fluid" ng-controller="ctrlProyectos">
+                    <table class="table table-striped">
+                        <div class="col-md-8">
+                            <thead>
+                                <tr>
+                                    <th scope="col">NOMBRE</th>
+                                    <th scope="col">RUT</th>
+                                    <th scope="col">CORREO</th>
+                                    <th scope="col">HABILIDADES</th>
+                                    <th scope="col">PROYECTO</th>
+                                    <th scope="col">ACCIÓN</th>
+                                
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="proyecto in proyecto | filter:q ">
+                                    <td scope="row">{{proyectos.nombre}}</td>
+                                    <td>{{proyectos.rut}}</td>
+                                    <td>{{proyectos.correo}}</td>
+                                    <td>{{proyectos.habilidades}}</td>
+                                    <td>{{proyectos.proyecto}}</td>
+                                    <td>
+                                     <button class="btn btn-danger btn-xs" ng-click="eliminar(proyecto.proyecto)">Eliminar</button>
+                                     <button class="btn btn-info btn-xs" ng-click="editar(proyecto.proyecto)">Editar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                       </div>
+                 </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-              <div class="container-fluid" ng-controller="ctrlHistorial">
-
-                  <table border="2" class="table table-striped">
-                    <div class="col-md-8">
-                        
-                          <thead>
-                              <tr>
-                                  <th scope="col">NOMBRE</th>
-                                  <th scope="col">RUT</th>
-                                  <th scope="col">CORREO</th>
-                                  <th scope="col">HABILIDADES</th>
-                                  <th scope="col">PROYECTO</th>
-                                  <th scope="col">ACCION</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                                  
-                                <tr ng-repeat="cancion in canciones | filter:q ">
-                                  <th scope="row">{{historial.nombre}}</th>
-                                  <td>{{historial.rut}}</td>
-                                  <td>{{historial.correo}}</td>
-                                  <td>{{historial.habilidades}}
-                                  <td>{{historial.proyecto}}</td>
-                                  <td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
-                                 </td>
-                              </tr>
-                          </tbody>
-                  </table>
-              </div>
-          </div>
-      </div>
-      </div>
 
 
       <!-- Optional JavaScript -->
