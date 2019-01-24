@@ -99,11 +99,11 @@
         </ul>
         </div>
         </nav>
-
+ 
         
             <div class="container-fluid" ng-controller="ctrlNuevoMiembro">
                 <div class="row">
-                <div class="col-offset-2 col-md-4" >
+                <div class="col-offset-2 col-md-4 col-xs-2" >
                 <form action="" class="formulario">
                 <h1 class="formulario__titulo">Agregar miembro</h1>
                 <input type="text" class="formulario__input" required>
@@ -116,31 +116,22 @@
                 <label for="" class="formulario__label" ng-model="cargo">Cargo:</label >
                 <input type="msg" class="formulario__input" required>
                 <label for="" class="formulario__label" ng-model="habilidad">Habilidades:</label >
-                </div>
-                </div>
-
-                <div class="col-md-4" >
-                <div class="row">
-                <select name="OS" class="OS">
-                <option selected value="0">Elige un proyecto:</option>
-                <option value="10">Proyecto 1</option>
-                <option value="11">Proyecto 2</option>
-                <option value="12">Proyecto 3</option>
-                </optgroup>
-                </select>
-                <label type="button" class="formulario__submits">Cancelar</label>
-                <label type="button" class="formulario__submit" ng-click="guardar()" ng-model="proyecto">Enviar</label>
-                </form>
-                </div>
-                </div>
-                <div class="col-md-4" >
-                <h3>Opciones</h3>
-                <input type="text" placeholder="Buscar Miembro" class="form-control">
-                <hr>
-                <a href="visualStaff.html" class="btn btn-default btn-primary btn-block">Volver</a>
-                </div>
+                    <select name="OS" class="OS">
+                        <option selected value="0">Elige un proyecto:</option>
+                        <option value="10">Proyecto 1</option>
+                        <option value="11">Proyecto 2</option>
+                        <option value="12">Proyecto 3</option>
+                        </optgroup>
+                        </select>
+                        <label type="button" class="formulario__submits">Cancelar</label>
+                        <label type="button" class="formulario__submit" ng-click="guardar()" ng-model="proyecto">Enviar</label>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+             
 		
 
     <!-- Optional JavaScript -->
@@ -155,7 +146,7 @@
 			});
 		});  
 	</script>
-     <script src="../js/form.js"></script>
+    <script src="../js/form.js"></script>
     
     
     
