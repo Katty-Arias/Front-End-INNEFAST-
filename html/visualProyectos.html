@@ -4,14 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylevista.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="../css/stylevista.css">
 
-¿<title>INNEFAST</title>
+  <title>INNEFAST</title>
   </head>
   <body>
       <!-- crear barra lateral desplegable-->
@@ -126,11 +124,7 @@
                       </ul>
                   </div>
               </nav>
-
-
-
-                <div class="container-fluid" ng-controller="ctrlProyectos">
-
+                   <div class="container-fluid" ng-controller="ctrlProyectos">
                     <table class="table table-striped">
                         <div class="col-md-8">
                             <thead>
@@ -141,21 +135,24 @@
                                     <th scope="col">HABILIDADES</th>
                                     <th scope="col">PROYECTO</th>
                                     <th scope="col">ACCIÓN</th>
-                                </tr>
+                                
                             </thead>
                             <tbody>
-                                
-                                <tr ng-repeat="cancion in canciones | filter:q ">
-                                    <th scope="row">{{proyectos.nombre}}</th>
+                                <tr ng-repeat="proyecto in proyecto | filter:q ">
+                                    <td scope="row">{{proyectos.nombre}}</td>
                                     <td>{{proyectos.rut}}</td>
+                                    <td>kasjaska</td>
                                     <td>{{proyectos.correo}}</td>
-                                    <td>{{proyectos.habilidades}}
+                                    <td>{{proyectos.habilidades}}</td>
                                     <td>{{proyectos.proyecto}}</td>
-                                    <td><button class="btn btn-danger btn-xs" ng-click="eliminar(proyecto.proyecto)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(proyecto.proyecto)">Editar</button></td>
+                                    <td>
+                                     <button class="btn btn-danger btn-xs" ng-click="eliminar(proyecto.proyecto)">Eliminar</button>
+                                     <button class="btn btn-info btn-xs" ng-click="editar(proyecto.proyecto)">Editar</button>
                                     </td>
                                 </tr>
                             </tbody>
-                    </table>
+                       </div>
+                 </table>
                 </div>
             </div>
         </div>

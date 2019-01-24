@@ -1,6 +1,5 @@
 ﻿<!doctype html>
 <html lang="en" ng-app="AdministradoresApp">
->
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -8,9 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylevista.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="../css/stylevista.css">
+   
 
     <title>INNEFAST</title>
 </head>
@@ -141,13 +140,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr ng-repeat="administrador in administrador | filter:q ">
                                 <th scope="row">{{administrador.id}}</th>
                                 <td>{{administrador.nombre}}</td>
                                 <td>{{administrador.cargo}}</td>
                                 <td>{{administrador.rut}}</td>
                                 <td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
-                                </td>
+                                
                             </tr>
                         </tbody>
                 </table>

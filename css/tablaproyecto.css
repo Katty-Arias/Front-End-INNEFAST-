@@ -1,12 +1,7 @@
 table {
-  text-align:center;
-    width: 100%;
+
     box-shadow: 10px 10px 5px #888;
-    margin:0 auto;
-    padding:10px;
-    border-radius:5px;
-    width:50%;
-    box-sizing: border-box;
+  
 }
 .flex{
     display:flex;
