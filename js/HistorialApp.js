@@ -1,6 +1,15 @@
 ﻿var app = angular.module('HistorialApp', []);
 
 app.controller('ctrlHistorial', function ($scope, $http) {
+    $scope.historiales = [
+        {
+        "nombre": "sdda",
+        "rut": "asdas",
+        "correo": "a@asdas.cl",
+        "habilidades": "...",
+        "proyecto": "..."
+        }]
+
     $scope.guardar = function () {
         var historial = {
             "nombre": $scope.nombre,
