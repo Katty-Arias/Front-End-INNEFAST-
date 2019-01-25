@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html ng-app='nuevoAdminApp'>
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container" ng-controller="ctrlnuevoAdmin">
+
+        <h1> Agregar administrador </h1> 
+
+        <div class="col-sm-4">
+
+            <form id="formulario" name="formulario"   >
+
+                <label>Nombre</label>
+
+                <input type="text" name="nombre" class="form-control" ng-model="nombreUs" required />
+               
+
+                <label>Email</label>
+                <input type="text" name="email" class="form-control" ng-model="email" required />
+
+             
+                <label>Contraseña</label>
+                <input type="password" name="contrasena" class="form-control" ng-model="contrasena" required/>
+
+               
+
+                <label>Rol</label>
+                <select name="rol" class="form-control">
+                    <option selected value="0" ng-model="rol">Elige un rol:</option>
+                    <option value="10">Fedora</option>
+                    <option value="11">Debian</option>
+                    <option value="12">Suse</option>
+
+                </select>
+
+                <br>
+                <input class="btn" type="submit" ng-click="guardar()"value="Enviar" />
+
+
+            </form>
+
+
+              
+        </div>
+
+    </div>
+    
+</body>
