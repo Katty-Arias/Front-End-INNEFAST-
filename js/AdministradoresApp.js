@@ -2,15 +2,16 @@
 
 app.controller('ctrlAdministradores', function ($scope, $http) {
     $scope.guardar = function () {
-        var administrador = {
-            "id": 121,
+        var usuarios = {
+            "id_rol": 1,
             "nombre": $scope.nombre,
-            "cargo": $scope.cargo,
-            "rut": $scope.rut,
+            "email": $scope.email,
+            "contrasena": $scope.contrasena,
+            "id_user":$scope.id_rol,
           
         };
 
-        $http.put("http://localhost:8082/administradores", administrador)
+        $http.put("http://localhost:8082/usuarios/encontrarTodos", usuarios)
             .then(function (resp) {
                 console.log(resp.data);
                 window.location.href = "visualAdministradores.html";

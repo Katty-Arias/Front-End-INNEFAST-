@@ -143,21 +143,21 @@
             <h1 class="formulario__titulo">Agregar administrador</h1>
     
             <input type="text" class="formulario__input" required >
-            <label for="" class="formulario__label">Nombre:</label ng-model="nombreUs">
+            <label for="" class="formulario__label">Nombre:</label ng-model="nombre">
             <input type="email" class="formulario__input" required>
             <label for="" class="formulario__label">Correo:</label ng-model="email">
             <input type="password" class="formulario__input" required>
             <label for="" class="formulario__label">Contraseña:</label ng-model="contrasena">
             <select name="OS" class="OS">
             <option selected value="0" ng-model="rol">Elige un rol:</option
-                <option value="10">Fedora</option>
-                <option value="11">Debian</option>
-                <option value="12">Suse</option>
+               
+                <option value="11">1</option>
+                <option value="12">1</option>
                 </optgroup>
             </select>
             <label type="button" class="formulario__submits">Cancelar</label>
-            <label type="button" class="formulario__submit" ng-click="guardar()">Enviar</label>
-  
+           
+            <button type="button" class="btn" ng-click="guardar()" >Basic</button>
         </form>
     </div>
     </div>
