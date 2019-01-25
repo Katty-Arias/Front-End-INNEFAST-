@@ -149,13 +149,13 @@
             <input type="password" class="formulario__input" required>
             <label for="" class="formulario__label">Contraseña:</label ng-model="contrasena">
             <select name="OS" class="OS">
-            <option selected value="0" ng-model="rol">Elige un rol:</option
+            <option selected value="0" ng-model="rol">Elige un rol:</option>
                
                 <option value="11">1</option>
                 <option value="12">1</option>
                 </optgroup>
             </select>
-            <a href="visualAdministradores.html" class="formulario__submits">Cancelar</a>
+            <a href="visualAdministradores.html" ng-click="guardar()" class="formulario__submits">Cancelar</a>
             <a href="visualAdministradores.html" class="formulario__submits">Enviar</a>
         </form>
     </div>
