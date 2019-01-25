@@ -22,125 +22,88 @@
 
     <title>INNEFAST</title>
 </head>
-
 <body>
     <!-- crear barra lateral desplegable-->
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3 align=center>INNEFAST </h3><img class="img-responsive" src="../images/logo-3.gif" alt="Chania"
-                    width="200" height="200">
+                <h3 align=center>INNEFAST </h3><img class="img-responsive" src="../images/logo-3.gif" alt="Chania" width="200" height="200">
             </div>
-            <div class="pajaro">
-                <ul class="list-unstyled components">
-                    <ul class="list-unstyled components">
-                        <li class="user-pro" align="center">
-                            <a href="#" class="waves-effect"><img src="../images/icono2.png" height="50"> <span class="hide-menu">
-                                    <span class="fa arrow"></span></span>
-                            </a>
-                        </li><!-- se debe agregar el nombre del usuario ingresado-->
+            <ul class="list-unstyled components">
+                <p>ADMINISTRADOR</p><!-- se debe agregar el nombre del usuario ingresado-->
+                <li>
+                    <a href="visualInicio.html">INICIO</a>
+                </li>
+                <!-- dropdow para desplegar mas funciones hacia abajo en barra-->
+                <li class="active">
+                    <a href="#staffSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">STAFF</a>
+                    <ul class="collapse list-unstyled" id="staffSubmenu">
+                        <!-- siempre debe coincidir con su href-->
                         <li>
-            </div>
-            <a href="visualInicio.html">INICIO</a>
-            </li>
-            <!-- dropdow para desplegar mas funciones hacia abajo en barra-->
-            <li class="active">
-                <a href="#staffSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">STAFF</a>
-                <ul class="collapse list-unstyled" id="staffSubmenu">
-                    <!-- siempre debe coincidir con su href-->
-                    <li>
-                        <a href="visualAgregarMiembro.html">Agregar Miembro</a><!-- subclases -->
-                    </li>
-                    <li>
-                        <a href="visualStaff.html">Staff</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#proyectoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PROYECTOS</a>
-                <ul class="collapse list-unstyled" id="proyectoSubmenu">
-                    <li>
-                        <a href="visualAgregarProyecto.html">Agregar Proyecto</a>
-                    </li>
-                    <li>
-                        <a href="visualProyectos.html">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="visualHistorialDeProyectos.html">Historial de Proyectos</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="active">
-                <a href="#administradorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ADMINISTRADOR</a>
-                <ul class="collapse list-unstyled" id="administradorSubmenu">
-                    <li>
-                        <a href="visualAgregarAdministrador.html">Agregar Administrador</a>
-                    </li>
-                    <li>
-                        <a href="visualAdministradores.html">Administradores</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
-            <li>
-                <a href="#"></a>
-            </li>
+                            <a href="visualAgregarMiembro.html">Agregar Miembro</a><!-- subclases -->
+                        </li>
+                        <li>
+                            <a href="visualStaff.html">Staff</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#proyectoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">PROYECTOS</a>
+                    <ul class="collapse list-unstyled" id="proyectoSubmenu">
+                        <li>
+                            <a href="visualAgregarProyecto.html">Agregar Proyecto</a>
+                        </li>
+                        <li>
+                            <a href="visualProyectos.html">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="visualHistorialDeProyectos.html">Historial de Proyectos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#administradorSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">ADMINISTRADOR</a>
+                    <ul class="collapse list-unstyled" id="administradorSubmenu">
+                        <li>
+                            <a href="visualAgregarAdministrador.html">Agregar Administrador</a>
+                        </li>
+                        <li>
+                            <a href="visualAdministradores.html">Administradores</a>
+                        </li>
+                    </ul>
+                </li>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+
 
             </ul>
 
@@ -152,22 +115,19 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fa fa-align-justify"></i> <span></span>
                 </button>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class=container-fluid>
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="HTMLPage1.html"></a>
-                            </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="HTMLPage1.html">&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; ; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="HTMLPage1.html">Cerrar Sesion</a>
-                            </li>
-                        </ul>
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="HTMLPage1.html">Cerrar Sesion</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
             <div class="container-fluid" ng-controller="ctrlHistorial">
@@ -184,12 +144,12 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="historial in historiales ">
-                                <td scope="row">{{historial.nombre}}</td>
-                                <td>{{historial.rut}}</td>
-                                <td>{{historial.correo}}</td>
-                                <td>{{historial.habilidades}}</td>
-                                <td>{{historial.proyecto}}</td>
+                            <tr >
+                                <td scope="row">1</td>
+                                <td>1</td>
+                                <td>1@1</td>
+                                <td>1</td>
+                                <td>1</td>
                                 <td>
                                     <button class="btn btn-danger btn-xs" ng-click="eliminar(proyecto.proyecto)">Eliminar</button>
                                     <button class="btn btn-info btn-xs" ng-click="editar(proyecto.proyecto)">Editar</button>
