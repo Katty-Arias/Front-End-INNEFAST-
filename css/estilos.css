@@ -19,6 +19,12 @@ body {
     box-shadow: 0 0 40px 3px rgba(0,0,0,0.3);
     position: relative;
 }
+.formularion{
+    width: 49%;
+}
+.formulariot{
+    width: 75%; 
+}
 .formulario__titulo {
     text-shadow: 3px 3px 2px rgb(128, 128, 128);
    color: #666;
@@ -80,14 +86,20 @@ body {
     transition: all 0.7s;
 }
 
-.formulario__submit, .formulario__submits {
+.formulario__submit, .formulario__submits, .formularion, .formulariot {
     background:#191970;
     color: white;
     cursor: pointer;
     border: none;
     padding: 10px 20px;
 }
-
+.formulariot {
+    background:#191970;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 14px 30px;
+}
 .fijar {
     margin-top: -115px;
 }
