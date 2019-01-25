@@ -132,19 +132,19 @@
                     <div class="col-md-8">
                         <thead>
                             <tr>
-                                <th scope="col">ID</th>
+                                <th scope="col">ID_Rol</th>
                                 <th scope="col">NOMBRE</th>
-                                <th scope="col">CARGO</th>
-                                <th scope="col">RUT</th>
+                                <th scope="col">EMAIL</th>
+                                <th scope="col">ID_USUARIO</th>
                                 <th scope="col">ACCIÓN</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr ng-repeat="administrador in administrador | filter:q ">
-                                <th scope="row">{{administrador.id}}</th>
+                            <tr ng-repeat="administradors in administradors | filter:q ">
+                                <th scope="row">{{administradors.ID_Rol}}</th>
                                 <td>{{administrador.nombre}}</td>
-                                <td>{{administrador.cargo}}</td>
-                                <td>{{administrador.rut}}</td>
+                                <td>{{administrador.EMAIL}}</td>
+                                <td>{{administrador.ID_USUARIO}}</td>
                                 <td><button class="btn btn-danger btn-xs" ng-click="eliminar(historial.historial)">Eliminar</button><button class="btn btn-info btn-xs" ng-click="eliminar(historial.historial)">Editar</button></td>
                                 
                             </tr>

@@ -14,9 +14,9 @@ app.controller('ctrlLogin', function($scope, $http)
             return ;
         }
         
-        if( $scope.modelUsuario == "admin" &&  $scope.modelPassword=="pass" ){
+        if( $scope.modelUsuario == "admin" &&  $scope.modelPassword=="1" ){
         	 $scope.mostrarError = false;
-            $scope.mostrarLogin = false;
+            $scope.mostrarLogin = true;
              $state.go('/home.html');
 
  
