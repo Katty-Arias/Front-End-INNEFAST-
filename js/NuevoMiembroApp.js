@@ -1,4 +1,4 @@
-var app = angular.module('FormularioApp', []);
+var app = angular.module('NuevoMiembroApp', []);
 app.controller('ctrlRegistro', function ($scope, $http) {
 
     $scope.mostrarError = false;
