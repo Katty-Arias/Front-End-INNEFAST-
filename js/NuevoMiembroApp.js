@@ -8,6 +8,7 @@ app.controller('ctrlRegistro', function ($scope, $http) {
     $scope.email = "";
     $scope.cargo = "";
     $scope.habilidad = "";
+    $scope.proyecto = "";
 
 
 
@@ -20,8 +21,9 @@ app.controller('ctrlRegistro', function ($scope, $http) {
             cargo: $scope.cargo,
             email: $scope.email,
             idPersona: $scope.rut,
+            proyecto: $scope.proyecto,
         });
-        if ($scope.rut == "" || $scope.nombre == "" ||  $scope.email == "" || $scope.cargo == "" || $scope.habilidad == "") {
+        if ($scope.rut == "" || $scope.nombre == "" || $scope.email == "" || $scope.cargo == "" || $scope.habilidad == "" || $scope.proyecto == "") {
             $scope.mostrarError = true;
             $scope.mensaje = "Ingrese todos los campos requeridos";
             console.log("Error Campos")
