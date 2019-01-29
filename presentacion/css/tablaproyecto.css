@@ -1,0 +1,38 @@
+table {
+
+    box-shadow: 10px 10px 5px #888;
+  
+}
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+.a {
+    text-align: center;
+    padding: 15px;
+    font-size: xx-large;
+    text-shadow: 3px 3px 2px #696;
+    color: #11019b;
+}
+  
+  th { /* Barra superior de la tabla y alineamiento del texto */
+    text-align: center
+  }
+  th {/* colores */
+    background-color: #757BD9;
+    color: white;
+  }
+  #rut{ /* Barra superior de la tabla de nombre rut ya que tiene que ser de mayor tamaño */
+    width: 15%;
+  }
+  #correo{ /* Barra superior de la tabla de nombre correo ya que tiene que ser de mayor tamaño */
+    width: 20%;
+  }
+  td{ /* Barras inferiores de la tabla, altura*/
+      height: 50px;
+  }
+  th, td {/* Barras generales */
+    padding: 15px;
+    text-align: left;
+  }
+  tr:nth-child(even) {background-color: #f2f2f2;}
